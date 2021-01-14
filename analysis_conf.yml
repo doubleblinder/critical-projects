@@ -1,0 +1,55 @@
+# In case you want to include other package managers than the ones selected,
+# uncomment them before starting the analysis 
+
+INCLUDED_PLATFORMS :
+  # - "Alcatraz"  # Package manager for XCode
+  # - Atom"  # do not include an editor for paper
+  # - "Bower"  # exclude, since dataset does not contain dependency relations
+  - "Cargo"
+  # - Carthage"  # dependencies for Cocoa applications
+  # - "Clojars"  # exclude, since dataset does not contain dependency relations
+  # - CocoaPods"  # dependency manager for Swift and Objective-C Cocoa
+  # - Conda"  # For the Conda Python distribution
+  - "CPAN"  # Perl
+  - "CRAN"  # R
+  - "Dub"  # D
+  - "Elm"  # Keep it?
+  # - Emacs"  # do not include an editor for paper
+  # - "Go"  # exclude, since dataset does not contain dependency relations
+  # - "Hackage"  # Haskell, exclude, since dataset does not contain dependency relations
+  # - Haxelib"  # For the Haxe programming language
+  - "Hex"  # Erlang and Elixir package manager
+  - "Homebrew"  # Package manager for MacOS
+  # - Inqlude"  # Qt code dependency manager
+  # - Jam",  another JS package manager, excluded due to dead domain: http://www.jamjs.org/
+  # - "Julia"  # exclude, since dataset does not contain dependency relations
+  - "Maven"
+  # - "Meteor"  # exclude, since dataset does not contain dependency relations
+  # - "Nimble"  # exclude, since dataset does not contain dependency relations
+  - "NPM"
+  - "NuGet"
+  - "Packagist"  # PHP
+  # - PlatformIO"  # dependency manager for embedded development
+  - "Pub"  # Dart
+  - "Puppet"
+  # - PureScript",  does not seem to be on libraries.io anymore
+  - "Pypi"
+  # - "Racket"  # exclude, since dataset does not contain dependency relations
+  - "Rubygems"
+  # - Shards"  # Crystal package manager, below 100 packages
+  # - Sublime"  # do not include an editor for paper
+  # - "SwiftPM"  # exclude, since dataset does not contain dependency relations
+  # - Wordpress"  #
+
+# To keep the 24GB tar.gz file from libraries.io, set value to TRUE
+KEEP_ORIG_DATA: FALSE  
+
+NUMBER_OF_PROJECTS: 1000
+NUMBER_OF_TF_PROJECTS: 20
+
+EXPERIMENT_PLATFORMS :
+  - "Cargo"
+  - "Maven"
+  - "NPM"
+  - "Packagist"
+  - "Pypi"
